@@ -1,0 +1,278 @@
+{
+  "array": [
+    {
+      "name": "Hooky",
+      "index": 0,
+      "url": "",
+      "primaryColor": "#699bf9",
+      "secondaryColor": "#e6ecf8",
+      "overview": {
+        "src": "/static/images/projects/hooky/overview-color.png"
+      },
+      "header": {
+        "src": "/static/images/projects/hooky/header.png"
+      },
+      "info": {
+        "type": "Mobile app",
+        "role": "UX / UI Designer",
+        "agency": "School project",
+        "date": "December 2016",
+        "description": "Hooky is A mobile application which was created during an intensive week course about mobile. This app aims at detecting student's presence in A classroom with A beacon system, but also accounts for missed lessons. All datas are directly sent to the school administration's website. The most important thing was to highlight attendance validation's system. So, I thought of a navigation that requires few steps and actions."
+      },
+      "panelTop": {
+        "backgroundPosition": "left",
+        "foregroundPosition": "center",
+        "backgroundSrc": "/static/images/projects/hooky/panel-top-background.png",
+        "foregroundSrc": "/static/images/projects/hooky/panel-top-foreground.png"
+      },
+      "panelCenter": {
+        "rows": [
+          {
+            "columns": [
+              {
+                "src": "/static/images/projects/hooky/panel-center-row-1-col-1.png"
+              },
+              {
+                "src": "/static/images/projects/hooky/panel-center-row-1-col-2.png"
+              },
+              {
+                "src": "/static/images/projects/hooky/panel-center-row-1-col-3.png"
+              }
+            ]
+          },
+          {
+            "columns": [
+              {
+                "src": "/static/images/projects/hooky/panel-center-row-2-col-1.png"
+              },
+              {
+                "src": "/static/images/projects/hooky/panel-center-row-2-col-2.png"
+              },
+              {
+                "src": "/static/images/projects/hooky/panel-center-row-2-col-3.png"
+              }
+            ]
+          }
+        ]
+      },
+      "panelBottom": {
+        "hasMarginBottom": true,
+        "rows": [
+          {
+            "columns": [
+              {
+                "src": "/static/images/projects/hooky/panel-bottom-row-1-col-1.png"
+              },
+              {
+                "src": "/static/images/projects/hooky/panel-bottom-row-1-col-2.png"
+              }
+            ]
+          },
+          {
+            "columns": [
+              {
+                "src": "/static/images/projects/hooky/panel-bottom-row-1-col-1.png"
+              },
+              {
+                "src": "/static/images/projects/hooky/panel-bottom-row-1-col-2.png"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Discover",
+      "index": 3,
+      "url": "",
+      "primaryColor": "#8869c8",
+      "secondaryColor": "#efeaf8",
+      "overview": {
+        "src": "/static/images/projects/discover/overview-color.png"
+      },
+      "header": {
+        "src": "/static/images/projects/discover/header.png"
+      },
+      "info": {
+        "type": "Web",
+        "role": "UX / UI Designer",
+        "agency": "School project",
+        "date": "November 2016",
+        "description": "Discover is A website aiming at sharing on a some place, promotions, articles, interviews, links…The main problematic was to bring out the best post of the day. I also had to be careful not disadvantaging the pictureless posts."
+      },
+      "panelTop": {
+        "backgroundPosition": "right",
+        "foregroundPosition": "left",
+        "backgroundSrc": "/static/images/projects/discover/panel-top-background.png",
+        "foregroundSrc": "/static/images/projects/discover/panel-top-foreground.png"
+      },
+      "panelCenter": {
+        "rows": [
+          {
+            "columns": [
+              {
+                "src": "/static/images/projects/discover/panel-center-row-1-col-1.png"
+              },
+              {
+                "src": "/static/images/projects/discover/panel-center-row-1-col-2.png"
+              }
+            ]
+          },
+          {
+            "columns": [
+              {
+                "src": "/static/images/projects/discover/panel-center-row-2-col-1.png"
+              },
+              {
+                "src": "/static/images/projects/discover/panel-center-row-2-col-2.png"
+              }
+            ]
+          }
+        ]
+      },
+      "panelBottom": {
+        "hasMarginBottom": false,
+        "rows": [
+          {
+            "columns": [
+              {
+                "src": "/static/images/projects/discover/panel-bottom-row-1-col-1.png"
+              },
+              {
+                "src": "/static/images/projects/discover/panel-bottom-row-1-col-2.png"
+              }
+            ]
+          },
+          {
+            "columns": [
+              {
+                "src": "/static/images/projects/discover/panel-bottom-row-2-col-1.png"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Le Dernier Métro",
+      "index": 2,
+      "url": "https://www.lederniermetro.fr/",
+      "primaryColor": "#bea37a",
+      "secondaryColor": "#f5f1eb",
+      "overview": {
+        "src": "/static/images/projects/LDM/overview-color.png"
+      },
+      "header": {
+        "src": "/static/images/projects/LDM/header.png"
+      },
+      "info": {
+        "type": "Web",
+        "role": "UX / UI Designer",
+        "agency": "Personnal project",
+        "date": "August 2016",
+        "description": "The idea of this website comes from ESSEC students. I was in charge of working on the UX and UI and then I designed the responsive version. « The last metro » gathers main benefits in Paris for students. The project’s problematic was to allow users to find easily and quickly the right good deals near them. I designed a map gathering every good deals of the website and with easy access everywhere with mobile."
+      },
+      "panelTop": {
+        "backgroundPosition": "cover",
+        "foregroundPosition": "center",
+        "backgroundSrc": "/static/images/projects/LDM/panel-top-background.png",
+        "foregroundSrc": "/static/images/projects/LDM/panel-top-foreground.png"
+      },
+      "panelCenter": {
+        "rows": [
+          {
+            "columns": [
+              {
+                "src": "/static/images/projects/LDM/panel-center-row-1-col-1.png"
+              },
+              {
+                "rows": [
+                  {
+                    "columns": [
+                      {
+                        "src": "/static/images/projects/LDM/panel-center-row-1-col-2.png"
+                      }
+                    ]
+                  },
+                  {
+                    "columns": [
+                      {
+                        "src": "/static/images/projects/LDM/panel-center-row-2-col-2.png"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "panelBottom": {
+        "hasMarginBottom": false,
+        "rows": [
+          {
+            "columns": [
+              {
+                "src": "/static/images/projects/LDM/panel-bottom-row-1-col-1.png"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Terre de saveurs",
+      "index": 1,
+      "url": "",
+      "primaryColor": "#ff5656",
+      "secondaryColor": "#fce2e2",
+      "overview": {
+        "src": "/static/images/projects/TDS/overview-color.png"
+      },
+      "header": {
+        "src": "/static/images/projects/TDS/header.png"
+      },
+      "info": {
+        "type": "Web",
+        "role": "UX / UI Designer",
+        "agency": "FOVE",
+        "date": "August 2016",
+        "description": "  This project was about reworking the previous website. It’s a regional website that highlights farmers and their products. "
+      },
+      "panelTop": {
+        "backgroundPosition": "cover",
+        "foregroundPosition": "",
+        "backgroundSrc": "/static/images/projects/TDS/panel-top-background.png",
+        "foregroundSrc": ""
+      },
+      "panelCenter": {
+        "rows": [
+          {
+            "columns": [
+              {
+                "src": "/static/images/projects/TDS/panel-center-row-1-col-1.png"
+              },
+              {
+                "src": "/static/images/projects/TDS/panel-center-row-1-col-2.png"
+              }
+            ]
+          }
+        ]
+      },
+      "panelBottom": {
+        "hasMarginBottom": false,
+        "rows": [
+          {
+            "columns": [
+              {
+                "src": "/static/images/projects/TDS/panel-bottom-row-1-col-1.png"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+
+

@@ -1,0 +1,44 @@
+#social-network {
+  position: absolute;
+  right: 75px;
+  bottom: 40px;
+  opacity: 0;
+  z-index: 1;
+
+  a {
+    display: inline-block;
+
+    &:first-child {
+      display: none;
+    }
+
+    &:first-child img {
+      margin-left: 0;
+    }
+
+    &:last-child img {
+      margin-right: 0;
+    }
+
+    img {
+      display: block;
+      width: auto;
+      height: 30px;
+      margin: 0 10px;
+
+    }
+  }
+}
+
+#app.mobile-device {
+  #social-network {
+    position: absolute;
+    left: 40px;
+    right: auto;
+    bottom: 40px;
+
+    a:first-child {
+      display: inline-block;
+    }
+  }
+}

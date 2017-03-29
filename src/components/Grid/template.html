@@ -1,0 +1,13 @@
+<div class="container">
+  <div v-for="row in rows"
+       class="row">
+    <div v-for="column in row.columns" class="column">
+      <Grid v-if="column.rows"
+            :name="name"
+            :rows="column.rows"></Grid>
+      <img v-else
+           :src="column.src"
+           :alt="name">
+    </div>
+  </div>
+</div>

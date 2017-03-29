@@ -1,0 +1,1 @@
+export const ON_ASSETS_LOADED = 'ON_ASSETS_LOADED';

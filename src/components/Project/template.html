@@ -1,0 +1,109 @@
+<div>
+  <section :id="'project-' + index"
+           class="project">
+    <div class="project-header">
+      <img :src="headerProperties.src"
+           :alt="name">
+    </div>
+    <div class="project-info fading-block">
+      <h2 class="project-title">
+        {{ name }}
+        <a v-if="url"
+           class="animated-link"
+           :href="url"
+           target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               viewBox="-293 385 24 24"
+               :style="{ fill: primaryColor }">
+            <path d="M-278.7 400.8c-1.4 0-2.8-.6-3.8-1.6-1.4-1.4-1.9-3.2-1.5-5 0-.6.5-1 1-.8.5.1.9.6.8 1.2-.2 1.1.1 2.3.9 3.1.9.9 2.1 1.2 3.2 1 .6-.1 1.2-.4 1.6-.8.1-.1.1-.1.2-.1l2.9-2.9c1.3-1.3 1.3-3.5 0-4.9-1.4-1.4-3.6-1.4-5-.1l-1.5 1.5-.1.1c-.3.4-1 .5-1.4.2-.4-.3-.5-1-.2-1.4.2-.2.3-.3.4-.3l1.5-1.5c2.1-2.1 5.6-2.1 7.7 0 2.2 2.2 2.2 5.6.1 7.8l-2.9 2.9-.3.3c-.7.6-1.5 1-2.5 1.2-.4 0-.8.1-1.1.1z"/>
+            <path d="M-285.1 407.1c-1.4 0-2.8-.5-3.9-1.6-2.2-2.2-2.2-5.6-.1-7.8l2.9-2.9c.2 0 .2-.1.3-.2.7-.6 1.5-1 2.5-1.2 1.8-.4 3.6.2 5 1.5 1.4 1.4 1.9 3.2 1.5 5-.1.5-.6.9-1.2.8-.5-.1-.9-.6-.8-1.2.2-1.1-.1-2.3-.9-3.1-.9-.9-2.1-1.2-3.2-1-.6.1-1.2.4-1.6.8-.1.1-.1.1-.2.1l-2.9 2.9c-1.3 1.3-1.3 3.5 0 4.9 1.4 1.4 3.6 1.4 5 .1l1.5-1.5.1-.1c.3-.4 1-.5 1.4-.2.4.3.5 1 .2 1.4l-.3.3-1.5 1.5c-1 1-2.4 1.5-3.8 1.5z"/>
+          </svg>
+        </a>
+      </h2>
+      <div class="project-info-row">
+        <div class="project-info-col-left">
+          <div class="project-info-type">Type of project</div>
+          <div>{{ infoProperties.type }}</div>
+          <div class="project-info-role">Role</div>
+          <div>{{ infoProperties.role }}</div>
+          <div class="project-info-agency">Agency</div>
+          <div>{{ infoProperties.agency }}</div>
+          <div class="project-info-date">Date</div>
+          <div>{{ infoProperties.date }}</div>
+        </div>
+        <div class="project-info-col-right">{{ infoProperties.description }}</div>
+      </div>
+      </div>
+    <div v-if="panelTopProperties"
+         class="project-panel-top fading-block"
+         :style="{ backgroundColor: secondaryColor }">
+      <div class="project-panel-top-background">
+        <img v-if="panelTopProperties.backgroundPosition != 'cover'"
+             :src="panelTopProperties.backgroundSrc"
+             :alt="name"
+             :style="panelTopProperties.backgroundStyle">
+        <div v-else class="project-panel-top-background-cover"
+             :style="panelTopProperties.backgroundStyle">
+        </div>
+      </div>
+      <div v-if="panelTopProperties.foregroundSrc"
+           class="project-panel-top-foreground">
+        <img :src="panelTopProperties.foregroundSrc"
+             :alt="name"
+             :style="panelTopProperties.foregroundStyle">
+      </div>
+    </div>
+    <div v-if="panelCenterProperties"
+         class="project-panel-center container fading-block">
+      <Grid :name="name"
+            :rows="panelCenterProperties.rows"></Grid>
+    </div>
+    <div v-if="panelBottomProperties"
+         class="project-panel-bottom fading-block"
+         :class="{ 'no-margin-bottom': !panelBottomProperties.hasMarginBottom }"
+         :style="{ backgroundColor: secondaryColor }">
+      <Grid :name="name"
+            :rows="panelBottomProperties.rows"></Grid>
+    </div>
+    <nav class="project-nav fading-block">
+      <router-link class="project-nav-previous"
+                   :to="navProperties.previous.path">
+        <div @mouseover="handleMouseOverNav('previous')"
+             @mouseout="handleMouseOutNav('previous')">
+          <div class="project-nav-text">
+            <img class="arrow"
+                 src="/static/images/icons/arrow.svg"
+                 alt="Previous projet">
+            Previous project
+          </div>
+          <h3 class="project-nav-title">
+            {{ navProperties.previous.name }}
+          </h3>
+          <div class="project-nav-overview">
+            <img :src="navProperties.previous.src"
+                 :alt="name">
+          </div>
+        </div>
+      </router-link>
+      <router-link class="project-nav-next"
+                   :to="navProperties.next.path">
+        <div @mouseover="handleMouseOverNav('next')"
+             @mouseout="handleMouseOutNav('next')">
+          <div class="project-nav-text">
+            Next project
+            <img class="arrow"
+                 src="/static/images/icons/arrow.svg"
+                 alt="Next project">
+          </div>
+          <h3 class="project-nav-title">
+            {{ navProperties.next.name }}
+          </h3>
+          <div class="project-nav-overview">
+            <img :src="navProperties.next.src"
+                 :alt="name">
+          </div>
+        </div>
+      </router-link>
+    </nav>
+  </section>
+</div>

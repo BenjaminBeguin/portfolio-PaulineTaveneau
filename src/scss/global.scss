@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'KeplerStd-Disp';
+  src: url('../assets/fonts/KeplerStd-Disp.eot?#iefix') format('embedded-opentype'),  url('../assets/fonts/KeplerStd-Disp.otf')  format('opentype'),
+  url('../assets/fonts/KeplerStd-Disp.woff') format('woff'), url('../assets/fonts/KeplerStd-Disp.ttf')  format('truetype'), url('../assets/fonts/KeplerStd-Disp.svg#KeplerStd-Disp') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gt_eesti_pro_displaylight';
+  src: url('../assets/fonts/gteestiprodisplay-light-webfont.woff2') format('woff2'),
+  url('../assets/fonts/gteestiprodisplay-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gt_eesti_pro_displayregular';
+  src: url('../assets/fonts/gteestiprodisplay-regular-webfont.woff2') format('woff2'),
+  url('../assets/fonts/gteestiprodisplay-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body {
+  font-family: 'gt_eesti_pro_displayregular', sans-serif;
+  text-align: center;
+  color: #000000;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover, &:focus, &:active {
+    text-decoration: none;
+  }
+}
+
+#app:not(.mobile-device) {
+  .animated-link {
+    display: inline-block;
+    transition: 0.4s ease-in-out;
+
+    &:hover, &:focus, &:active {
+      transform: translateY(-4px);
+    }
+  }
+}

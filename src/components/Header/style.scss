@@ -1,0 +1,52 @@
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+
+  .logo {
+    position: absolute;
+    top: 40px;
+    left: 75px;
+
+    img {
+      width: 155px;
+      height: auto;
+    }
+  }
+
+  .about {
+    position: absolute;
+    top: 40px;
+    right: 75px;
+
+    span {
+      font-family: 'gt_eesti_pro_displaylight', sans-serif;
+      color: #000000;
+    }
+  }
+}
+
+#app.mobile-device {
+  #header {
+    .logo {
+      left: 40px;
+      right: 40px;
+      pointer-events: none;
+
+      img {
+        display: block;
+        max-width: 100%;
+        width: 315px;
+        height: auto;
+      }
+    }
+
+    .about {
+      display: none;
+    }
+  }
+}

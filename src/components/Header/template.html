@@ -1,0 +1,8 @@
+<div id="header">
+  <router-link class="logo animated-link" to="/home">
+    <img src="/static/images/logo.svg" alt="Pauline Taveneau">
+  </router-link>
+  <router-link v-if="$route.name != 'about'" class="about animated-link" to="/about">
+    <span>About</span>
+  </router-link>
+</div>

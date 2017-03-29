@@ -1,0 +1,33 @@
+.overview {
+  position: fixed;
+  top: 9999px;
+  left: 9999px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transform: scale(0.8);
+  overflow: hidden;
+  transform-style: preserve-3d;
+
+  img {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .overview {
+    transform: scale(0.7);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .overview {
+    transform: scale(0.6);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .overview {
+    transform: scale(0.5);
+  }
+}
+

@@ -1,0 +1,60 @@
+$margin-padding: 50px;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: $margin-padding 0;
+
+    &:first-child {
+      margin-top: 0!important;
+    }
+
+    &:last-child {
+      margin-bottom: 0!important;
+    }
+
+    [class^="column"] {
+      margin: 0 auto;
+      padding: 0 $margin-padding;
+
+      &:first-child {
+        padding-left: 0!important;
+      }
+
+      &:last-child {
+        padding-right: 0!important;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@for $i from 1 through 12 {
+  .column-#{$i} {
+    flex: $i;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    .row {
+      margin: ($margin-padding * 0.5) 0;
+
+      [class^="column"] {
+        padding: 0 ($margin-padding * 0.5);
+      }
+    }
+  }
+}
