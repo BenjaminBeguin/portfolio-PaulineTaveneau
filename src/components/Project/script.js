@@ -12,6 +12,7 @@ export default {
     return {
       index: -1,
       name: null,
+      template: null,
       url: null,
       primaryColor: '#000000',
       secondaryColor: '#000000',
@@ -38,11 +39,13 @@ export default {
       navProperties: {
         previous: {
           name: null,
+          template: null,
           src: null,
           path: null
         },
         next: {
           name: null,
+          template: null,
           src: null,
           path: null
         }
@@ -152,6 +155,7 @@ export default {
 
       this.index = projectProperties.index;
       this.name = projectProperties.name;
+      this.template = projectProperties.template;
       this.url = projectProperties.url;
       this.primaryColor = projectProperties.primaryColor;
       this.secondaryColor = projectProperties.secondaryColor;
@@ -196,9 +200,11 @@ export default {
       }
 
       navProperties.previous.name = this.getPreviousProjectProperties().name;
+      navProperties.previous.template = this.getPreviousProjectProperties().template;
       navProperties.previous.src = this.getPreviousProjectProperties().header.src;
       navProperties.previous.path = '/projects/' + projectNameToRoute(navProperties.previous.name);
       navProperties.next.name = this.getNextProjectProperties().name;
+      navProperties.next.template = this.getNextProjectProperties().template;
       navProperties.next.src = this.getNextProjectProperties().header.src;
       navProperties.next.path = '/projects/' + projectNameToRoute(navProperties.next.name)
     }

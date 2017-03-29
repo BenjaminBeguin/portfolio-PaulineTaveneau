@@ -19,11 +19,14 @@ $nav-overview-width: 260px;
 
   &-header {
     position: relative;
-    max-width: $max-width;
+    max-width: auto;
     max-height: 510px;
-    margin: $margin-top auto 0;
+    // margin: $margin-top auto 0;
     padding: 0 $padding-left-right;
     overflow: hidden;
+    background-size: cover;
+    max-height: 500px !important;
+    height: 500px !important;
 
     img {
       position: relative;
@@ -35,14 +38,16 @@ $nav-overview-width: 260px;
 
   &-title {
     display: block;
-    width: calc(26% + 27.5px);
-    font-size: 40px;
+    color : #f7f7f7;
+    //width: calc(26% + 27.5px);
+    font-size: 90px;
     font-weight: normal;
-    font-family: 'KeplerStd-Disp', serif;
-    text-align: center;
+    // font-family: 'KeplerStd-Disp', serif;
+    font-family: 'gt_eesti_pro_displayregular', sans-serif;
+    text-align: left;
     margin: 70px 0 35px;
     white-space: nowrap;
-    transform: translateX(50%);
+    //transform: translateX(50%);
 
     a {
       display: inline-block;
@@ -55,16 +60,21 @@ $nav-overview-width: 260px;
     }
   }
   &-info {
-    max-width: $max-width * 0.75;
+    max-width: $max-width * 1;
     margin: 0 auto;
-    padding: 0 $padding-left-right * 1.75;
+    padding: 0 $padding-left-right * 1;
 
     &-type, &-role, &-agency, &-date {
       font-family: 'gt_eesti_pro_displayregular', sans-serif;
     }
 
     &-role, &-agency, &-date {
-      margin-top: 15px;
+      margin-top: 3px;
+    }
+
+    .project-info-groupe {
+      text-align: center;
+      margin-right: 50px;
     }
 
     &-row {
@@ -73,21 +83,23 @@ $nav-overview-width: 260px;
     }
 
     &-col-left {
-      width: 26%;
+      width: 40%;
       margin-right: 55px;
-      color: #727272;
+      color: black;
       font-size: 16px;
       font-family: 'gt_eesti_pro_displaylight', sans-serif;
       text-align: right;
+      display: flex;
       line-height: 20px;
     }
 
     &-col-right {
-      width: calc(74% - 55px);
+      width: calc(60% - 55px);
       font-size: 16px;
+      color: #868686;
       text-align: left;
       font-family: 'gt_eesti_pro_displaylight', sans-serif;
-      line-height: 20px;
+      line-height: 30px;
       white-space: pre-line;
     }
   }
@@ -96,7 +108,8 @@ $nav-overview-width: 260px;
     position: relative;
     width: 100%;
     height: $panel-top-height;
-    margin: 140px 0 210px;
+    // margin: 140px 0 210px;
+    margin: 0px 0 100px;
 
     &-background, &-foreground {
       position: absolute;
@@ -138,7 +151,8 @@ $nav-overview-width: 260px;
 
   &-panel-center {
     max-width: $max-width;
-    margin: 210px auto;
+    //margin: 210px auto;
+    margin: 100px auto;
     padding: 0 $padding-left-right;
   }
 

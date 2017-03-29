@@ -1,10 +1,13 @@
 <div>
   <section :id="'project-' + index"
-           class="project">
-    <div class="project-header">
+           class="project" :class="template">
+    <div class="project-header" :style ="{'background-image': `url(${headerProperties.src})`}">
+
+    </div>
+    <!-- <div class="project-header">
       <img :src="headerProperties.src"
            :alt="name">
-    </div>
+    </div> -->
     <div class="project-info fading-block">
       <h2 class="project-title">
         {{ name }}
@@ -22,18 +25,33 @@
       </h2>
       <div class="project-info-row">
         <div class="project-info-col-left">
-          <div class="project-info-type">Type of project</div>
+          <!-- <div class="project-info-type">Type of project</div>
           <div>{{ infoProperties.type }}</div>
-          <div class="project-info-role">Role</div>
-          <div>{{ infoProperties.role }}</div>
-          <div class="project-info-agency">Agency</div>
-          <div>{{ infoProperties.agency }}</div>
-          <div class="project-info-date">Date</div>
-          <div>{{ infoProperties.date }}</div>
+ -->
+          <div class="project-info-groupe">
+            <div class="project-info-role">Role</div>
+            <div>{{ infoProperties.role }}</div>
+          </div>
+          <!-- <div class="project-info-agency">Agency</div>
+          <div>{{ infoProperties.agency }}</div> -->
+          <div class="project-info-groupe">
+            <div class="project-info-date">Date</div>
+            <div>{{ infoProperties.date }}</div>
+          </div>
         </div>
         <div class="project-info-col-right">{{ infoProperties.description }}</div>
       </div>
-      </div>
+    </div>
+
+    <div v-if="panelBottomProperties && template == 'desktop'"
+         class="project-panel-bottom fading-block"
+         :class="{ 'no-margin-bottom': !panelBottomProperties.hasMarginBottom }"
+         :style="{ backgroundColor: secondaryColor }">
+      <Grid :name="name"
+            :rows="panelBottomProperties.rows"></Grid>
+    </div>
+
+
     <div v-if="panelTopProperties"
          class="project-panel-top fading-block"
          :style="{ backgroundColor: secondaryColor }">
@@ -58,7 +76,7 @@
       <Grid :name="name"
             :rows="panelCenterProperties.rows"></Grid>
     </div>
-    <div v-if="panelBottomProperties"
+    <div v-if="panelBottomProperties && template == 'mobile'"
          class="project-panel-bottom fading-block"
          :class="{ 'no-margin-bottom': !panelBottomProperties.hasMarginBottom }"
          :style="{ backgroundColor: secondaryColor }">

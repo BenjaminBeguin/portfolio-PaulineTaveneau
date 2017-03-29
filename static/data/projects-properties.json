@@ -2,6 +2,7 @@
   "array": [
     {
       "name": "Hooky",
+      "template": "mobile",
       "index": 0,
       "url": "",
       "primaryColor": "#699bf9",
@@ -83,6 +84,7 @@
     },
     {
       "name": "Discover",
+      "template": "mobile",
       "index": 3,
       "url": "",
       "primaryColor": "#8869c8",
@@ -155,6 +157,7 @@
     },
     {
       "name": "Le Dernier Métro",
+      "template": "desktop",
       "index": 2,
       "url": "https://www.lederniermetro.fr/",
       "primaryColor": "#bea37a",
@@ -176,7 +179,7 @@
         "backgroundPosition": "cover",
         "foregroundPosition": "center",
         "backgroundSrc": "/static/images/projects/LDM/panel-top-background.png",
-        "foregroundSrc": "/static/images/projects/LDM/panel-top-foreground.png"
+        "foregroundSrc": ""
       },
       "panelCenter": {
         "rows": [
@@ -222,6 +225,7 @@
     },
     {
       "name": "Terre de saveurs",
+      "template": "desktop",
       "index": 1,
       "url": "",
       "primaryColor": "#ff5656",
