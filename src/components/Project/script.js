@@ -35,6 +35,7 @@ export default {
         foregroundStyle: {}
       },
       panelCenterProperties: null,
+      panelMobileProperties: null,
       panelBottomProperties: null,
       navProperties: {
         previous: {
@@ -173,6 +174,7 @@ export default {
       panelTopProperties.foregroundSrc = projectProperties.panelTop.foregroundSrc;
 
       this.panelCenterProperties = projectProperties.panelCenter;
+      this.panelMobileProperties = projectProperties.panelMobile;
       this.panelBottomProperties = projectProperties.panelBottom;
 
       switch (panelTopProperties.backgroundPosition) {

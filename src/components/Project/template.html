@@ -53,7 +53,7 @@
 
 
     <div v-if="panelTopProperties"
-         class="project-panel-top fading-block"
+         class="project-panel-top fading-block" v-bind:class="{ 'height': template =='desktop'}"
          :style="{ backgroundColor: secondaryColor }">
       <div class="project-panel-top-background">
         <img v-if="panelTopProperties.backgroundPosition != 'cover'"
@@ -76,6 +76,15 @@
       <Grid :name="name"
             :rows="panelCenterProperties.rows"></Grid>
     </div>
+
+     <div v-if="panelMobileProperties"
+         class="project-panel-mobile container fading-block">
+         <div class="item" v-for="item in panelMobileProperties.rows[0].columns">
+            <img :src="item.src" alt="">
+          </div>
+      </div>
+
+
     <div v-if="panelBottomProperties && template == 'mobile'"
          class="project-panel-bottom fading-block"
          :class="{ 'no-margin-bottom': !panelBottomProperties.hasMarginBottom }"

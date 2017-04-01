@@ -107,16 +107,20 @@ $nav-overview-width: 260px;
   &-panel-top {
     position: relative;
     width: 100%;
-    height: $panel-top-height;
+
     // margin: 140px 0 210px;
     margin: 0px 0 100px;
 
+    &.height {
+      height: $panel-top-height;
+    }
+
     &-background, &-foreground {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      //position: absolute;
+     // top: 0;
+     // left: 0;
+      //right: 0;
+     // bottom: 0;
       width: 100%;
       height: 100%;
     }
@@ -141,14 +145,35 @@ $nav-overview-width: 260px;
 
     &-foreground {
       img {
-        position: absolute;
-        top: 50%;
+       // position: absolute;
+       // top: 50%;
         max-height: 750px;
         width: auto;
       }
     }
   }
+  &-panel-mobile {
+    max-width: $max-width;
+    margin: 200px auto;
+    display: flex;
 
+    .item{
+      width: 16.6666667;
+      padding: 10px;
+
+      &:nth-child(odd){
+        transform : translateY(25%);
+      }
+
+      &:nth-child(even){
+        transform : translateY(-25%);
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
   &-panel-center {
     max-width: $max-width;
     //margin: 210px auto;
