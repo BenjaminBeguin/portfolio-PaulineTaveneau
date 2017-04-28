@@ -34,6 +34,9 @@ export default {
         backgroundStyle: {},
         foregroundStyle: {}
       },
+      panelBaniere: {
+        imageSrc: null
+      },
       panelCenterProperties: null,
       panelMobileProperties: null,
       panelBottomProperties: null,
@@ -151,6 +154,7 @@ export default {
       const headerProperties = this.headerProperties;
       const infoProperties = this.infoProperties;
       const panelTopProperties = this.panelTopProperties;
+      const panelBaniere = this.panelBaniere;
       const navProperties = this.navProperties;
       const projectProperties = this.projectProperties;
 
@@ -172,6 +176,9 @@ export default {
       panelTopProperties.foregroundPosition = projectProperties.panelTop.foregroundPosition;
       panelTopProperties.backgroundSrc = projectProperties.panelTop.backgroundSrc;
       panelTopProperties.foregroundSrc = projectProperties.panelTop.foregroundSrc;
+
+      panelBaniere.imageSrc = projectProperties.panelBaniere.imageSrc;
+
 
       this.panelCenterProperties = projectProperties.panelCenter;
       this.panelMobileProperties = projectProperties.panelMobile;

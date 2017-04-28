@@ -51,11 +51,10 @@
             :rows="panelBottomProperties.rows"></Grid>
     </div>
 
-
     <div v-if="panelTopProperties"
          class="project-panel-top fading-block" v-bind:class="{ 'height': template =='desktop'}"
          :style="{ backgroundColor: secondaryColor }">
-      <div class="project-panel-top-background">
+      <div class="project-panel-top-background" v-if="template ==='mobile'">
         <img v-if="panelTopProperties.backgroundPosition != 'cover'"
              :src="panelTopProperties.backgroundSrc"
              :alt="name"
@@ -64,6 +63,11 @@
              :style="panelTopProperties.backgroundStyle">
         </div>
       </div>
+
+      <div v-if="panelBaniere.imageSrc"
+           class="project-panel-baniere" :style ="{'background-image': `url(${panelBaniere.imageSrc})`}">
+      </div>
+
       <div v-if="panelTopProperties.foregroundSrc"
            class="project-panel-top-foreground">
         <img :src="panelTopProperties.foregroundSrc"

@@ -3,7 +3,7 @@ $primaryColor: #f5b8a7;
 $max-width: 1144px;
 $margin-top: 150px;
 $padding-left-right: 160px;
-$panel-top-height: 525px;
+$panel-top-height: 480px;
 $nav-height: 153px;
 $nav-arrow-width: 103px;
 $nav-overview-width: 260px;
@@ -20,13 +20,12 @@ $nav-overview-width: 260px;
   &-header {
     position: relative;
     max-width: auto;
-    max-height: 510px;
     // margin: $margin-top auto 0;
     padding: 0 $padding-left-right;
     overflow: hidden;
     background-size: cover;
-    max-height: 500px !important;
-    height: 500px !important;
+    max-height: 430px !important;
+    height: 430px !important;
 
     img {
       position: relative;
@@ -73,7 +72,7 @@ $nav-overview-width: 260px;
     }
 
     .project-info-groupe {
-      text-align: center;
+      text-align: left;
       margin-right: 50px;
     }
 
@@ -103,6 +102,10 @@ $nav-overview-width: 260px;
       white-space: pre-line;
     }
   }
+  &-panel-baniere {
+    height: $panel-top-height;
+    background-size: cover;
+  }
 
   &-panel-top {
     position: relative;
@@ -110,6 +113,10 @@ $nav-overview-width: 260px;
 
     // margin: 140px 0 210px;
     margin: 0px 0 100px;
+
+    .mobile & {
+        margin: 140px 0 100px;
+    }
 
     &.height {
       height: $panel-top-height;
@@ -122,6 +129,7 @@ $nav-overview-width: 260px;
       //right: 0;
      // bottom: 0;
       width: 100%;
+      min-height: 600px;
       height: 100%;
     }
 
@@ -144,9 +152,16 @@ $nav-overview-width: 260px;
     }
 
     &-foreground {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
       img {
-       // position: absolute;
-       // top: 50%;
+       position: relative;
+       top: -130px;
+       left: 0;
         max-height: 750px;
         width: auto;
       }
@@ -186,6 +201,11 @@ $nav-overview-width: 260px;
     width: 100%;
     margin: 210px auto 0;
 
+    .container {
+      max-width: 800px;
+      padding-left: 0;
+      padding-right: 0;
+    }
     > div {
       max-width: $max-width;
       padding: 130px $padding-left-right;

@@ -57,9 +57,85 @@
       "panelBottom": ""
     },
     {
+      "name": "Discover",
+      "template": "mobile",
+      "index": 3,
+      "url": "",
+      "primaryColor": "#8869c8",
+      "secondaryColor": "#efeaf8",
+      "overview": {
+        "src": "/static/images/projects/discover/overview-color.png"
+      },
+      "header": {
+        "src": "/static/images/projects/discover/header.png"
+      },
+      "info": {
+        "type": "Web",
+        "role": "UX / UI Designer",
+        "agency": "School project",
+        "date": "November 2016",
+        "description": "Discover is A website aiming at sharing on a some place, promotions, articles, interviews, links…The main problematic was to bring out the best post of the day. I also had to be careful not disadvantaging the pictureless posts."
+      },
+      "panelBaniere": {
+        "imageSrc": "/static/images/projects/discover/panel-baniere.png"
+      },
+      "panelTop": {
+        "backgroundPosition": "cover",
+        "foregroundPosition": "",
+        "backgroundSrc": "/static/images/projects/discover/panel-top-background.png",
+        "foregroundSrc": ""
+      },
+      "panelCenter": {
+        "rows": [
+          {
+            "columns": [
+              {
+                "src": "/static/images/projects/discover/panel-center-row-1-col-1.png"
+              },
+              {
+                "src": "/static/images/projects/discover/panel-center-row-1-col-2.png"
+              }
+            ]
+          },
+          {
+            "columns": [
+              {
+                "src": "/static/images/projects/discover/panel-center-row-2-col-1.png"
+              },
+              {
+                "src": "/static/images/projects/discover/panel-center-row-2-col-2.png"
+              }
+            ]
+          }
+        ]
+      },
+      "panelBottom": {
+        "hasMarginBottom": false,
+        "rows": [
+          {
+            "columns": [
+              {
+                "src": "/static/images/projects/discover/panel-bottom-row-1-col-1.png"
+              },
+              {
+                "src": "/static/images/projects/discover/panel-bottom-row-1-col-2.png"
+              }
+            ]
+          },
+          {
+            "columns": [
+              {
+                "src": "/static/images/projects/discover/panel-bottom-row-2-col-1.png"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "name": "Le Dernier Métro",
       "template": "desktop",
-      "index": 1,
+      "index": 2,
       "url": "https://www.lederniermetro.fr/",
       "primaryColor": "#bea37a",
       "secondaryColor": "#f5f1eb",
@@ -93,13 +169,13 @@
                 "src": "/static/images/projects/LDM/mobile1.png"
               },
               {
-                "src": "/static/images/projects/LDM/mobile2.png"
+                "src": "/static/images/projects/TDS/mobile2.png"
               },
                {
                 "src": "/static/images/projects/LDM/mobile3.png"
               },
               {
-                "src": "/static/images/projects/LDM/mobile4.png"
+                "src": "/static/images/projects/TDS/mobile4.png"
               },
                {
                 "src": "/static/images/projects/LDM/mobile5.png"
@@ -153,86 +229,7 @@
     {
       "name": "Terre de saveurs",
       "template": "desktop",
-      "index": 2,
-      "url": "",
-      "primaryColor": "#ff5656",
-      "secondaryColor": "#fce2e2",
-      "overview": {
-        "src": "/static/images/projects/TDS/overview-color.png"
-      },
-      "header": {
-        "src": "/static/images/projects/TDS/header.png"
-      },
-      "info": {
-        "type": "Web",
-        "role": "UX / UI Designer",
-        "agency": "FOVE",
-        "date": "August 2016",
-        "description": "  This project was about reworking the previous website. It’s a regional website that highlights farmers and their products. "
-      },
-      "panelBaniere": {
-        "imageSrc": "/static/images/projects/TDS/panel-baniere.png"
-      },
-      "panelTop": {
-        "backgroundPosition": "cover",
-        "foregroundPosition": "",
-        "backgroundSrc": "/static/images/projects/TDS/panel-top-background.png",
-        "foregroundSrc": ""
-      },
-      "panelMobile": {
-        "rows": [
-          {
-            "columns": [
-              {
-                 "src": "/static/images/projects/TDS/mobile1.png"
-              },
-              {
-                 "src": "/static/images/projects/TDS/mobile2.png"
-              },
-               {
-                 "src": "/static/images/projects/TDS/mobile3.png"
-              },
-              {
-                 "src": "/static/images/projects/TDS/mobile4.png"
-              },
-               {
-                 "src": "/static/images/projects/TDS/mobile5.png"
-              }
-            ]
-          }
-        ]
-      },
-      "panelCenter": {
-        "rows": [
-          {
-            "columns": [
-              {
-                "src": "/static/images/projects/TDS/panel-center-row-1-col-1.png"
-              },
-              {
-                "src": "/static/images/projects/TDS/panel-center-row-1-col-2.png"
-              }
-            ]
-          }
-        ]
-      },
-      "panelBottom": {
-        "hasMarginBottom": false,
-        "rows": [
-          {
-            "columns": [
-              {
-                "src": "/static/images/projects/TDS/panel-bottom-row-1-col-1.png"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "name": "Project name",
-      "template": "desktop",
-      "index": 3,
+      "index": 1,
       "url": "",
       "primaryColor": "#ff5656",
       "secondaryColor": "#fce2e2",
