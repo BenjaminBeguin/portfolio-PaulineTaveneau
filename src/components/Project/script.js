@@ -39,6 +39,7 @@ export default {
       },
       panelCenterProperties: null,
       panelMobileProperties: null,
+      panelScreenProperties: null,
       panelBottomProperties: null,
       navProperties: {
         previous: {
@@ -182,6 +183,7 @@ export default {
 
       this.panelCenterProperties = projectProperties.panelCenter;
       this.panelMobileProperties = projectProperties.panelMobile;
+      this.panelScreenProperties = projectProperties.panelScreen;
       this.panelBottomProperties = projectProperties.panelBottom;
 
       switch (panelTopProperties.backgroundPosition) {

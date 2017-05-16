@@ -24,11 +24,33 @@
         "imageSrc": "/static/images/projects/hooky/panel-baniere.png"
       },
       "panelTop": {
-        "padding": "300",
         "backgroundPosition": "cover",
         "foregroundPosition": "",
         "backgroundSrc": "/static/images/projects/hooky/panel-top-background.png",
-        "foregroundSrc": "/static/images/projects/hooky/panel-top-foreground.png"
+        "foregroundSrc": ""
+      },
+      "panelScreen": {
+        "rows": [
+          {
+            "columns": [
+              {
+                 "src": "/static/images/projects/hooky/screen1.png"
+              },
+              {
+                 "src": "/static/images/projects/hooky/screen2.png"
+              },
+               {
+                 "src": "/static/images/projects/hooky/screen3.png"
+              },
+              {
+                 "src": "/static/images/projects/hooky/screen4.png"
+              },
+               {
+                 "src": "/static/images/projects/hooky/screen5.png"
+              }
+            ]
+          }
+        ]
       },
       "panelMobile": {
         "rows": [
@@ -82,7 +104,7 @@
       "panelTop": {
         "backgroundPosition": "cover",
         "foregroundPosition": "center",
-        "backgroundSrc": "/static/images/projects/LDM/panel-top-background.png",
+        "backgroundSrc": "/static/images/projects/LDM/panel-baniere.png",
         "foregroundSrc": ""
       },
       "panelMobile": {
@@ -113,21 +135,14 @@
           {
             "columns": [
               {
-                "src": "/static/images/projects/LDM/panel-center-row-1-col-1.png"
+                "src": "/static/images/projects/LDM/panel-center-1.png"
               },
               {
                 "rows": [
                   {
                     "columns": [
                       {
-                        "src": "/static/images/projects/LDM/panel-center-row-1-col-2.png"
-                      }
-                    ]
-                  },
-                  {
-                    "columns": [
-                      {
-                        "src": "/static/images/projects/LDM/panel-center-row-2-col-2.png"
+                        "src": "/static/images/projects/LDM/panel-center-2.png"
                       }
                     ]
                   }
@@ -207,10 +222,10 @@
           {
             "columns": [
               {
-                "src": "/static/images/projects/TDS/panel-center-row-1-col-1.png"
+                "src": "/static/images/projects/TDS/panel-center-1.png"
               },
               {
-                "src": "/static/images/projects/TDS/panel-center-row-1-col-2.png"
+                "src": "/static/images/projects/TDS/panel-center-2.png"
               }
             ]
           }
@@ -230,7 +245,7 @@
       }
     },
     {
-      "name": "Project name",
+      "name": "Express",
       "template": "desktop",
       "index": 3,
       "url": "",
@@ -250,12 +265,12 @@
         "description": "  This project was about reworking the previous website. It’s a regional website that highlights farmers and their products. "
       },
       "panelBaniere": {
-        "imageSrc": "/static/images/projects/TDS/panel-baniere.png"
+        "imageSrc": "/static/images/projects/express/panel-baniere.png"
       },
       "panelTop": {
         "backgroundPosition": "cover",
         "foregroundPosition": "",
-        "backgroundSrc": "/static/images/projects/TDS/panel-top-background.png",
+        "backgroundSrc": "/static/images/projects/express/panel-top-background.png",
         "foregroundSrc": ""
       },
       "panelMobile": {
@@ -263,19 +278,19 @@
           {
             "columns": [
               {
-                 "src": "/static/images/projects/TDS/mobile1.png"
+                 "src": "/static/images/projects/express/mobile1.png"
               },
               {
-                 "src": "/static/images/projects/TDS/mobile2.png"
+                 "src": "/static/images/projects/express/mobile2.png"
               },
                {
-                 "src": "/static/images/projects/TDS/mobile3.png"
+                 "src": "/static/images/projects/express/mobile3.png"
               },
               {
-                 "src": "/static/images/projects/TDS/mobile4.png"
+                 "src": "/static/images/projects/express/mobile4.png"
               },
                {
-                 "src": "/static/images/projects/TDS/mobile5.png"
+                 "src": "/static/images/projects/express/mobile5.png"
               }
             ]
           }
@@ -286,10 +301,10 @@
           {
             "columns": [
               {
-                "src": "/static/images/projects/TDS/panel-center-row-1-col-1.png"
+                "src": "/static/images/projects/express/panel-center-1.png"
               },
               {
-                "src": "/static/images/projects/TDS/panel-center-row-1-col-2.png"
+                "src": "/static/images/projects/express/panel-center-2.png"
               }
             ]
           }
@@ -301,7 +316,7 @@
           {
             "columns": [
               {
-                "src": "/static/images/projects/TDS/panel-bottom-row-1-col-1.png"
+                "src": "/static/images/projects/express/panel-bottom-row-1-col-1.png"
               }
             ]
           }

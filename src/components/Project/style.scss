@@ -172,6 +172,25 @@ $nav-overview-width: 260px;
     margin: 200px auto;
     display: flex;
 
+    &.inline {
+      .item{
+        width: 16.6666667;
+        padding: 10px;
+
+        &:nth-child(odd){
+          transform : translateY(0%);
+        }
+
+        &:nth-child(even){
+          transform : translateY(0%);
+        }
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+
     .item{
       width: 16.6666667;
       padding: 10px;
