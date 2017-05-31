@@ -53,6 +53,7 @@
         ]
       },
       "panelMobile": {
+        "color": "#ebf1fd",
         "rows": [
           {
             "columns": [
@@ -197,23 +198,7 @@
       "panelMobile": {
         "rows": [
           {
-            "columns": [
-              {
-                 "src": "/static/images/projects/TDS/mobile1.png"
-              },
-              {
-                 "src": "/static/images/projects/TDS/mobile2.png"
-              },
-               {
-                 "src": "/static/images/projects/TDS/mobile3.png"
-              },
-              {
-                 "src": "/static/images/projects/TDS/mobile4.png"
-              },
-               {
-                 "src": "/static/images/projects/TDS/mobile5.png"
-              }
-            ]
+            "columns": []
           }
         ]
       },

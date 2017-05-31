@@ -3,13 +3,14 @@ $primaryColor: #f5b8a7;
 $max-width: 1144px;
 $margin-top: 150px;
 $padding-left-right: 160px;
-$panel-top-height: 480px;
+$panel-top-height: 550px;
 $nav-height: 153px;
 $nav-arrow-width: 103px;
 $nav-overview-width: 260px;
 
 .project {
   position: absolute;
+  background: #fbfbfb;
   top: 0;
   left: 0;
   right: 0;
@@ -71,6 +72,16 @@ $nav-overview-width: 260px;
       margin-top: 3px;
     }
 
+    &.project-info {
+      background: white;
+      padding-top: 70px;
+      padding-bottom: 140px;
+
+      h2 {
+        margin-top: 0;
+      }
+    }
+
     .project-info-groupe {
       text-align: left;
       margin-right: 50px;
@@ -109,13 +120,14 @@ $nav-overview-width: 260px;
 
   &-panel-top {
     position: relative;
+    background-color: white;
     width: 100%;
 
     // margin: 140px 0 210px;
-    margin: 0px 0 100px;
+    margin: 0px 0 0px;
 
     .mobile & {
-        margin: 140px 0 100px;
+        margin: 0px 0 100px;
     }
 
     &.height {
@@ -173,6 +185,9 @@ $nav-overview-width: 260px;
     display: flex;
 
     &.inline {
+      margin: 0px auto 0;
+      padding: 150px 20px;
+
       .item{
         width: 16.6666667;
         padding: 10px;
@@ -211,14 +226,15 @@ $nav-overview-width: 260px;
   &-panel-center {
     max-width: $max-width;
     //margin: 210px auto;
-    margin: 100px auto;
-    padding: 0 $padding-left-right;
+    background-color: white;
+    margin: 0px auto 0px;
+    padding: 100px $padding-left-right;
   }
 
   &-panel-bottom {
     position: relative;
     width: 100%;
-    margin: 210px auto 0;
+    margin: 0px auto 0;
 
     .container {
       max-width: 800px;
@@ -236,6 +252,7 @@ $nav-overview-width: 260px;
     width: 100vw;
     height: $nav-height;
     overflow: hidden;
+    background: white;
 
     a {
       display: block;

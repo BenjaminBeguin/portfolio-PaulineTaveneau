@@ -44,23 +44,27 @@
     </div>
 
     <div v-if="panelScreenProperties"
-        class="project-panel-mobile inline container fading-block">
-        <div class="item" v-for="item in panelScreenProperties.rows[0].columns">
-           <img :src="item.src" alt="">
-         </div>
+        class="" v-bind:style="{ background: panelMobileProperties.color}">
+        <div class="project-panel-mobile inline container fading-block">
+          <div class="item" v-for="item in panelScreenProperties.rows[0].columns">
+            <img :src="item.src" alt="">
+          </div>
+        </div>
      </div>
 
     <div v-if="panelBottomProperties && template == 'desktop'"
          class="project-panel-bottom fading-block"
          :class="{ 'no-margin-bottom': !panelBottomProperties.hasMarginBottom }"
-         :style="{ backgroundColor: secondaryColor }">
+        >
+        <!-- :style="{ backgroundColor: secondaryColor }"> -->
       <Grid :name="name"
             :rows="panelBottomProperties.rows"></Grid>
     </div>
 
     <div v-if="panelTopProperties"
          class="project-panel-top fading-block" v-bind:class="{ 'height': template =='desktop'}"
-         :style="{ backgroundColor: secondaryColor }">
+        >
+        <!--  :style="{ backgroundColor: secondaryColor }" -->
       <!-- <div class="project-panel-top-background" v-if="template ==='mobile'">
         <img v-if="panelTopProperties.backgroundPosition != 'cover'"
              :src="panelTopProperties.backgroundSrc"
@@ -88,13 +92,12 @@
             :rows="panelCenterProperties.rows"></Grid>
     </div>
 
-     <div v-if="panelMobileProperties"
+     <div v-if="panelMobileProperties && panelMobileProperties.rows[0].columns.length > 0"
          class="project-panel-mobile container fading-block">
          <div class="item" v-for="item in panelMobileProperties.rows[0].columns">
             <img :src="item.src" alt="">
           </div>
       </div>
-
 
     <div v-if="panelBottomProperties && template == 'mobile'"
          class="project-panel-bottom fading-block"
