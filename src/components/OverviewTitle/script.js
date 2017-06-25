@@ -53,7 +53,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.initProperties();
-    }, 50);
+    }, 100);
     window.addEventListener('resize', this.debounceResize);
   },
   beforeDestroy() {

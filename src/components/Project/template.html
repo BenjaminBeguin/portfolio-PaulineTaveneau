@@ -25,19 +25,25 @@
       </h2>
       <div class="project-info-row">
         <div class="project-info-col-left">
+
+          <h2>{{ name }}</h2>
+          <div class="contentWrapper">
+            <div class="project-info-groupe">
+              <!-- <div class="project-info-role">Role</div> -->
+              <div>{{ infoProperties.role }}</div>
+              <div>{{ infoProperties.date }}</div>
+            </div>
+          </div>
           <!-- <div class="project-info-type">Type of project</div>
           <div>{{ infoProperties.type }}</div>
  -->
-          <div class="project-info-groupe">
-            <div class="project-info-role">Role</div>
-            <div>{{ infoProperties.role }}</div>
-          </div>
+
           <!-- <div class="project-info-agency">Agency</div>
           <div>{{ infoProperties.agency }}</div> -->
-          <div class="project-info-groupe">
+          <!-- <div class="project-info-groupe">
             <div class="project-info-date">Date</div>
             <div>{{ infoProperties.date }}</div>
-          </div>
+          </div> -->
         </div>
         <div class="project-info-col-right">{{ infoProperties.description }}</div>
       </div>

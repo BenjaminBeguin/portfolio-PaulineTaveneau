@@ -69,6 +69,7 @@ export default {
      * @param direction
      */
     handleMouseOverNav(direction) {
+      console.log(direction);
       const text = document.querySelector(`.project-nav-${direction} .project-nav-text`);
       const title = document.querySelector(`.project-nav-${direction} .project-nav-title`);
       const overview = document.querySelector(`.project-nav-${direction} .project-nav-overview`);
@@ -97,6 +98,7 @@ export default {
      * @param direction
      */
     handleMouseOutNav(direction) {
+      console.log(direction);
       const text = document.querySelector(`.project-nav-${direction} .project-nav-text`);
       const title = document.querySelector(`.project-nav-${direction} .project-nav-title`);
       const overview = document.querySelector(`.project-nav-${direction} .project-nav-overview`);
