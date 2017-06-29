@@ -98,6 +98,7 @@ $nav-overview-width: 260px;
     &-col-left {
       width: 30%;
       margin-right: 55px;
+      margin-top: 45px;
       color: black;
       font-size: 16px;
       font-family: 'gt_eesti_pro_displaylight', sans-serif;
@@ -323,7 +324,6 @@ $nav-overview-width: 260px;
 
     &-previous &-title {
       transform: translateX(115px);
-
     }
 
     &-previous &-overview {
@@ -351,9 +351,11 @@ $nav-overview-width: 260px;
     &-next &-overview {
       right: 0;
       text-align: right;
+
     }
 
     &-next &-title {
+      transform: translateX(-115px);
       // transform: translateX(-161px);
       width: 100%;
     }

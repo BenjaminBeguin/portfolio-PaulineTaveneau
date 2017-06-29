@@ -81,7 +81,7 @@ export default {
           opacity: 0,
           ease: Power2.easeInOut
         }, 0)
-        .to(title, store.state.settings.projectNavFadeSpeed, {
+        .to(title, store.state.settings.projectNavFadeSpeed, {  
           opacity: 0,
           ease: Power2.easeInOut
         }, 0)
