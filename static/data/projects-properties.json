@@ -3,7 +3,7 @@
     {
       "name": "Hooky",
       "template": "mobile",
-      "index": 0,
+      "index": 1,
       "url": "",
       "primaryColor": "#699bf9",
       "secondaryColor": "#e6ecf8",
@@ -44,16 +44,12 @@
               },
               {
                  "src": "/static/images/projects/hooky/screen4.png"
-              },
-               {
-                 "src": "/static/images/projects/hooky/screen5.png"
               }
             ]
           }
         ]
       },
       "panelMobile": {
-        "color": "#ebf1fd",
         "rows": [
           {
             "columns": [
@@ -68,9 +64,6 @@
               },
               {
                 "src": "/static/images/projects/hooky/mobile4.png"
-              },
-               {
-                "src": "/static/images/projects/hooky/mobile5.png"
               }
             ]
           }
@@ -82,7 +75,7 @@
     {
       "name": "Le Dernier Métro",
       "template": "desktop",
-      "index": 1,
+      "index": 2,
       "url": "https://www.lederniermetro.fr/",
       "primaryColor": "#bea37a",
       "secondaryColor": "#f5f1eb",
@@ -107,29 +100,6 @@
         "foregroundPosition": "center",
         "backgroundSrc": "/static/images/projects/LDM/panel-baniere.png",
         "foregroundSrc": ""
-      },
-      "panelMobile": {
-        "rows": [
-          {
-            "columns": [
-              {
-                "src": "/static/images/projects/LDM/mobile1.png"
-              },
-              {
-                "src": "/static/images/projects/LDM/mobile2.png"
-              },
-               {
-                "src": "/static/images/projects/LDM/mobile3.png"
-              },
-              {
-                "src": "/static/images/projects/LDM/mobile4.png"
-              },
-               {
-                "src": "/static/images/projects/LDM/mobile5.png"
-              }
-            ]
-          }
-        ]
       },
       "panelCenter": {
         "rows": [
@@ -169,7 +139,7 @@
     {
       "name": "Terre de saveurs",
       "template": "desktop",
-      "index": 2,
+      "index": 3,
       "url": "",
       "primaryColor": "#ff5656",
       "secondaryColor": "#fce2e2",
@@ -230,24 +200,24 @@
       }
     },
     {
-      "name": "Express",
+      "name": "L'Express",
       "template": "desktop",
-      "index": 3,
+      "index": 0,
       "url": "",
       "primaryColor": "#ff5656",
       "secondaryColor": "#fce2e2",
       "overview": {
-        "src": "/static/images/projects/TDS/overview-color.png"
+        "src": "/static/images/projects/express/overview-color.png"
       },
       "header": {
-        "src": "/static/images/projects/TDS/header.png"
+        "src": "/static/images/projects/express/header.png"
       },
       "info": {
         "type": "Web",
         "role": "UX / UI Designer",
         "agency": "FOVE",
-        "date": "August 2016",
-        "description": "  This project was about reworking the previous website. It’s a regional website that highlights farmers and their products. "
+        "date": "April 2016",
+        "description": " This is a freelance project for L'Express a famous french newspaper. The goal was to redesign completely their process to sell iTunes cards. I designed an interface where every interferences are removed. On only one page the user access to the whole products catalogue saving him few clicks. The entire buying process has been gathered in one step also."
       },
       "panelBaniere": {
         "imageSrc": "/static/images/projects/express/panel-baniere.png"
@@ -273,9 +243,6 @@
               },
               {
                  "src": "/static/images/projects/express/mobile4.png"
-              },
-               {
-                 "src": "/static/images/projects/express/mobile5.png"
               }
             ]
           }

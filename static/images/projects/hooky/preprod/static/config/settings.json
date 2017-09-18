@@ -1,0 +1,25 @@
+{
+  "loaderFadeSpeed": 0.9,
+  "titleFadeSpeed": 1,
+  "projectOverviewPositioningRadius": {
+    "x": 60,
+    "y": 50
+  },
+  "projectOverviewFadeSpeed": 0.9,
+  "projectOverviewRepositioningSpeed": 0.3,
+  "projectOverviewZoomSpeed": 1,
+  "projectOverviewOpacitySpeed": 0.75,
+  "projectOverviewTitleFadeSpeed": 0.75,
+  "projectOverviewTitleMargin": 20,
+  "projectOverviewTitleDefaultOpacity": 0.03,
+  "headerFadeSpeed": 0.75,
+  "socialNetworkFadeSpeed": 0.75,
+  "mouseScrollFadeSpeed": 0.75,
+  "projectFadeSpeed": 1,
+  "projectNavFadeSpeed": 0.75,
+  "projectStaggerFade": 1,
+  "projectStaggerDelay": 0.25,
+  "aboutFadeSpeed": 0.9,
+  "aboutStaggerFade": 0.9,
+  "aboutStaggerDelay": 0.3
+}
