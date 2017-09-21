@@ -63,8 +63,7 @@ $nav-overview-width: 260px;
     }
   }
   &-info {
-    max-width: $max-width * 1;
-    margin: 0 auto;
+
     padding: 0 $padding-left-right * 1;
 
     &-type, &-role, &-agency, &-date {
@@ -76,6 +75,12 @@ $nav-overview-width: 260px;
     }
 
     &.project-info {
+
+      .wrapper {
+        max-width: $max-width * 1;
+        margin: 0 auto;
+
+      }
       background: white;
       padding-top: 70px;
       padding-bottom: 140px;
@@ -233,10 +238,12 @@ $nav-overview-width: 260px;
     }
   }
   &-panel-center {
-    max-width: $max-width;
+     .wrapper {
+       max-width: $max-width;
+       margin: 0px auto 0px;
+    }
     //margin: 210px auto;
     background-color: white;
-    margin: 0px auto 0px;
     padding: 100px $padding-left-right;
   }
 

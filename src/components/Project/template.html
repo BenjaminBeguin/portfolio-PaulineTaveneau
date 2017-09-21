@@ -9,6 +9,42 @@
            :alt="name">
     </div> -->
     <div class="project-info fading-block">
+      <div class="wrapper">
+        <div class="project-info-row">
+          <div class="project-info-col-left">
+
+            <h2>{{ name }}</h2>
+            <div class="contentWrapper">
+              <div class="project-info-groupe">
+                <!-- <div class="project-info-role">Role</div> -->
+                <div>{{ infoProperties.role }}</div>
+                <div>{{ infoProperties.date }}</div>
+              </div>
+            </div>
+            <!-- <div class="project-info-type">Type of project</div>
+            <div>{{ infoProperties.type }}</div>
+   -->
+
+            <!-- <div class="project-info-agency">Agency</div>
+            <div>{{ infoProperties.agency }}</div> -->
+            <!-- <div class="project-info-groupe">
+              <div class="project-info-date">Date</div>
+              <div>{{ infoProperties.date }}</div>
+            </div> -->
+          </div>
+          <div class="project-info-col-right">
+            {{ infoProperties.description }}
+            <br>
+            <a v-if="url"
+               class="animated-link"
+               :href="url"
+               target="_blank" style="color: black; font-weight: bold;">
+              Découvrir le site
+            </a>
+          </div>
+        </div>
+
+      </div>
       <!--<h2 class="project-title">
         {{ name }}
          <a v-if="url"
@@ -23,39 +59,7 @@
           </svg>
         </a>
       </h2> -->
-      <div class="project-info-row">
-        <div class="project-info-col-left">
 
-          <h2>{{ name }}</h2>
-          <div class="contentWrapper">
-            <div class="project-info-groupe">
-              <!-- <div class="project-info-role">Role</div> -->
-              <div>{{ infoProperties.role }}</div>
-              <div>{{ infoProperties.date }}</div>
-            </div>
-          </div>
-          <!-- <div class="project-info-type">Type of project</div>
-          <div>{{ infoProperties.type }}</div>
- -->
-
-          <!-- <div class="project-info-agency">Agency</div>
-          <div>{{ infoProperties.agency }}</div> -->
-          <!-- <div class="project-info-groupe">
-            <div class="project-info-date">Date</div>
-            <div>{{ infoProperties.date }}</div>
-          </div> -->
-        </div>
-        <div class="project-info-col-right">
-          {{ infoProperties.description }}
-          <br>
-          <a v-if="url"
-             class="animated-link"
-             :href="url"
-             target="_blank" style="color: black; font-weight: bold;">
-            Découvrir le site
-          </a>
-        </div>
-      </div>
     </div>
 
     <div v-if="panelScreenProperties"
@@ -103,8 +107,10 @@
     </div>
     <div v-if="panelCenterProperties"
          class="project-panel-center container fading-block">
-      <Grid :name="name"
-            :rows="panelCenterProperties.rows"></Grid>
+         <div class="wrapper">
+           <Grid :name="name"
+           :rows="panelCenterProperties.rows"></Grid>
+         </div>
     </div>
 
      <div v-if="panelMobileProperties && panelMobileProperties.rows[0].columns.length > 0"
