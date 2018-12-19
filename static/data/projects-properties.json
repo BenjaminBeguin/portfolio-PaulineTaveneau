@@ -1,104 +1,109 @@
 {
   "array": [
     {
-      "name": "Hooky",
-      "template": "mobile",
+      "name": "Osteopath",
+      "template": "desktop",
       "index": 1,
       "url": "",
-      "primaryColor": "#699bf9",
-      "secondaryColor": "#e6ecf8",
+      "primaryColor": "#282828",
+      "secondaryColor": "#f5c6a5",
       "overview": {
-        "src": "/static/images/projects/hooky/overview-color.png"
+        "src": "/static/images/projects/osteopath/overview-color.png"
       },
       "header": {
-        "src": "/static/images/projects/hooky/header.png"
+        "src": "/static/images/projects/osteopath/header.png"
       },
       "info": {
-        "type": "Mobile app",
-        "role": "UX / UI Designer",
-        "agency": "School project",
-        "date": "December 2016",
-        "description": "Hooky is A mobile application which was created during an intensive week course about mobile. This app aims at detecting student's presence in A classroom with A beacon system, but also accounts for missed lessons. All datas are directly sent to the school administration's website. The most important thing was to highlight attendance validation's system. So, I thought of a navigation that requires few steps and actions."
+        "type": "website",
+        "role": "Art Direction",
+        "agency": "Personnal project",
+        "date": "2018",
+        "description": "Elodie Taveneau is a Parisian Osteopath. For her website identity, we worked with round shapes to remind the molecular aspect. The interface is really clean, mainly in black and white, to refer to the medical field."
       },
       "panelBaniere": {
-        "imageSrc": "/static/images/projects/hooky/panel-baniere.png"
+        "imageSrc": "/static/images/projects/osteopath/panel-baniere.png"
       },
       "panelTop": {
         "backgroundPosition": "cover",
         "foregroundPosition": "",
-        "backgroundSrc": "/static/images/projects/hooky/panel-top-background.png",
+        "backgroundSrc": "/static/images/projects/osteopath/panel-top-background.png",
         "foregroundSrc": ""
-      },
-      "panelScreen": {
-        "rows": [
-          {
-            "columns": [
-              {
-                 "src": "/static/images/projects/hooky/screen1.png"
-              },
-              {
-                 "src": "/static/images/projects/hooky/screen2.png"
-              },
-               {
-                 "src": "/static/images/projects/hooky/screen3.png"
-              },
-              {
-                 "src": "/static/images/projects/hooky/screen4.png"
-              }
-            ]
-          }
-        ]
       },
       "panelMobile": {
         "rows": [
           {
             "columns": [
               {
-                "src": "/static/images/projects/hooky/mobile1.png"
+                 "src": "/static/images/projects/osteopath/mobile01.png"
               },
               {
-                "src": "/static/images/projects/hooky/mobile2.png"
+                 "src": "/static/images/projects/osteopath/mobile02.png"
               },
                {
-                "src": "/static/images/projects/hooky/mobile3.png"
+                 "src": "/static/images/projects/osteopath/mobile03.png"
               },
               {
-                "src": "/static/images/projects/hooky/mobile4.png"
+                 "src": "/static/images/projects/osteopath/mobile04.png"
               }
             ]
           }
         ]
       },
-      "panelCenter": "",
-      "panelBottom": ""
+      "panelCenter": {
+        "rows": [
+          {
+            "columns": [
+              {
+                "src": "/static/images/projects/osteopath/panel-center-1.png"
+              },
+              {
+                "src": "/static/images/projects/osteopath/panel-center-2.png"
+              }
+            ]
+          }
+        ]
+      },
+      "panelBottom": {
+        "hasMarginBottom": false,
+        "rows": [
+          {
+            "columns": [
+              {
+                "src": "/static/images/projects/Osteopath/panel-bottom-row-1-col-1.png"
+              }
+            ]
+          }
+        ]
+      }
     },
+
     {
-      "name": "Le Dernier Métro",
+      "name": "Raw Shaving",
       "template": "desktop",
       "index": 2,
-      "url": "https://www.lederniermetro.fr/",
+      "url": "https://www.behance.net/gallery/72732827/Raw-Shaving-Website",
       "primaryColor": "#bea37a",
       "secondaryColor": "#f5f1eb",
       "overview": {
-        "src": "/static/images/projects/LDM/overview-color.png"
+        "src": "/static/images/projects/RawShaving/overview-color.png"
       },
       "header": {
-        "src": "/static/images/projects/LDM/header.png"
+        "src": "/static/images/projects/RawShaving/header.png"
       },
       "info": {
         "type": "Web",
-        "role": "UX / UI Designer",
-        "agency": "Personnal project",
-        "date": "August 2016",
-        "description": "The idea of this website comes from ESSEC students. I was in charge of working on the UX and UI and then I designed the responsive version. « The last metro » gathers main benefits in Paris for students. The project’s problematic was to allow users to find easily and quickly the right good deals near them. I designed a map gathering every good deals of the website and with easy access everywhere with mobile."
+        "role": "UI Designer",
+        "agency": "Phoenix The Creative Studio",
+        "date": "2017",
+        "description": "Raw Shaving was founded by two friend’s love for sophistication. Their vision was to provide safety razors and shaving accessories that are in a class of their own, and which reflect modern man's desire for excellence. Only the finest would do, and so they began the hunt for perfect designers and flawless manufacturers who could create something truly special. From this vision, Raw ShavingTM was born. Created at Phoenix, the Creative Studio."
       },
       "panelBaniere": {
-        "imageSrc": "/static/images/projects/LDM/panel-baniere.png"
+        "imageSrc": "/static/images/projects/RawShaving/panel-baniere.png"
       },
       "panelTop": {
         "backgroundPosition": "cover",
         "foregroundPosition": "center",
-        "backgroundSrc": "/static/images/projects/LDM/panel-baniere.png",
+        "backgroundSrc": "/static/images/projects/RawShaving/panel-baniere.png",
         "foregroundSrc": ""
       },
       "panelCenter": {
@@ -106,14 +111,14 @@
           {
             "columns": [
               {
-                "src": "/static/images/projects/LDM/panel-center-1.png"
+                "src": "/static/images/projects/RawShaving/panel-center-1.png"
               },
               {
                 "rows": [
                   {
                     "columns": [
                       {
-                        "src": "/static/images/projects/LDM/panel-center-2.png"
+                        "src": "/static/images/projects/RawShaving/panel-center-2.png"
                       }
                     ]
                   }
@@ -129,7 +134,7 @@
           {
             "columns": [
               {
-                "src": "/static/images/projects/LDM/panel-bottom-row-1-col-1.png"
+                "src": "/static/images/projects/RawShaving/panel-bottom-row-1-col-1.png"
               }
             ]
           }
@@ -137,32 +142,32 @@
       }
     },
     {
-      "name": "Terre de saveurs",
+      "name": "Ownly",
       "template": "desktop",
       "index": 3,
-      "url": "",
+      "url": "https://www.behance.net/gallery/68001753/Ownly",
       "primaryColor": "#ff5656",
       "secondaryColor": "#fce2e2",
       "overview": {
-        "src": "/static/images/projects/TDS/overview-color.png"
+        "src": "/static/images/projects/Ownly/overview-color.png"
       },
       "header": {
-        "src": "/static/images/projects/TDS/header.png"
+        "src": "/static/images/projects/Ownly/header.png"
       },
       "info": {
         "type": "Web",
-        "role": "UX / UI Designer",
-        "agency": "FOVE",
-        "date": "August 2016",
-        "description": "  This project was about reworking the previous website. It’s a regional website that highlights farmers and their products. "
+        "role": "UX | Art direction",
+        "agency": "Phoenix The Creative Studio",
+        "date": "2017",
+        "description": " Ownly is a consulting firm based in Montreal. To represent the consulting firms directors working in the shadow, the user can reveal the letters of the cabinet's name with colors when passing his cursor over them. An opaque artistic direction embody the consulting cabinet"
       },
       "panelBaniere": {
-        "imageSrc": "/static/images/projects/TDS/panel-baniere.png"
+        "imageSrc": "/static/images/projects/Ownly/panel-baniere.png"
       },
       "panelTop": {
         "backgroundPosition": "cover",
         "foregroundPosition": "",
-        "backgroundSrc": "/static/images/projects/TDS/panel-top-background.png",
+        "backgroundSrc": "/static/images/projects/Ownly/panel-top-background.png",
         "foregroundSrc": ""
       },
       "panelMobile": {
@@ -177,10 +182,10 @@
           {
             "columns": [
               {
-                "src": "/static/images/projects/TDS/panel-center-1.png"
+                "src": "/static/images/projects/Ownly/panel-center-1.png"
               },
               {
-                "src": "/static/images/projects/TDS/panel-center-2.png"
+                "src": "/static/images/projects/Ownly/panel-center-2.png"
               }
             ]
           }
@@ -192,7 +197,7 @@
           {
             "columns": [
               {
-                "src": "/static/images/projects/TDS/panel-bottom-row-1-col-1.png"
+                "src": "/static/images/projects/Ownly/panel-bottom-row-1-col-1.png"
               }
             ]
           }
