@@ -139,9 +139,12 @@ class TransitionManager {
       autoAlpha: positionManager.normalizedDistance
     });
 
+    let colorState = positionManager.normalizedDistance * 2;
+
+
 
     TweenMax.to(overviewsContainer, store.state.settings.projectOverviewRepositioningSpeed, {
-      backgroundColor: `rgba(15,15,15, ${positionManager.normalizedDistance})`
+      backgroundColor: `rgba(15,15,15, ${colorState})`
     });
 
     for (let i = 0; i < store.state.projectsProperties.length; i++) {
