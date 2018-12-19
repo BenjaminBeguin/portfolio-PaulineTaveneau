@@ -65,6 +65,10 @@ class TransitionManager {
       zIndex: position.z,
       force3D: true
     });
+
+    TweenMax.to(overview, 1, {
+      opacity: 1,
+    });
   }
 
   /**
@@ -129,9 +133,15 @@ class TransitionManager {
    */
   fadeOverview() {
     const overviewsTitles = document.getElementsByClassName('overviews-titles')[0];
+    const overviewsContainer = document.getElementsByClassName('container')[0];
 
     TweenMax.to(overviewsTitles, store.state.settings.projectOverviewRepositioningSpeed, {
       autoAlpha: positionManager.normalizedDistance
+    });
+
+
+    TweenMax.to(overviewsContainer, store.state.settings.projectOverviewRepositioningSpeed, {
+      backgroundColor: `rgba(15,15,15, ${positionManager.normalizedDistance})`
     });
 
     for (let i = 0; i < store.state.projectsProperties.length; i++) {
@@ -174,7 +184,7 @@ class TransitionManager {
     }
 
     TweenMax.to(title, 0.15, {
-      autoAlpha: 1 - positionManager.normalizedDistance,
+      autoAlpha: 1 - positionManager.normalizedDistance * 4,
       ease: Power2.easeInOut
     });
   }

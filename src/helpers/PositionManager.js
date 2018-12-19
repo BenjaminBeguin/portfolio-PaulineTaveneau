@@ -37,7 +37,12 @@ class PositionManager {
     }
 
     const numberOfProjects = this.numberOfProjects;
-    const normalizedDistance = 1 - this.normalizedDistance;
+    let normalizedDistance = 0.5 - this.normalizedDistance;
+
+    if (this.normalizedDistance > 0.5) {
+      normalizedDistance = 0
+    }
+
     const radius = {
       x: this.defaultRadius.x + normalizedDistance * window.innerWidth,
       y: this.defaultRadius.y + normalizedDistance * window.innerHeight
