@@ -25,7 +25,9 @@ class TransitionManager {
 
       this.fadeProjectOut(projectProperties.index, next);
     } else if (from.name === 'about') {
-      this.fadeAboutOut(next);
+      setTimeout(() => {
+        this.fadeAboutOut(next);
+      }, 0);
     }
     else {
       next();
@@ -140,7 +142,6 @@ class TransitionManager {
     });
 
     let colorState = positionManager.normalizedDistance * 2;
-
 
 
     TweenMax.to(overviewsContainer, store.state.settings.projectOverviewRepositioningSpeed, {
@@ -312,8 +313,18 @@ class TransitionManager {
    * @param next
    */
   fadeHomeOut(next) {
+    const overviewsContainer = document.getElementsByClassName('container')[0];
+
+    setTimeout(function () {
+      TweenMax.to(overviewsContainer, 0.5, {
+        autoAlpha: 0,
+        ease: Power2.linear
+      })
+    }, store.state.settings.projectOverviewFadeSpeed * 800);
+
     TweenMax.to(positionManager, store.state.settings.projectOverviewFadeSpeed, {
       normalizedDistance: 0,
+      autoAlpha: 0,
       ease: Power2.easeInOut,
       onUpdate: () => {
         this.fadeOverview()
@@ -326,6 +337,9 @@ class TransitionManager {
         }, 200)
       }
     });
+
+
+
   }
 
   /**
@@ -460,6 +474,8 @@ class TransitionManager {
 
     const tl = new TimelineLite();
 
+    window.scroll(0, 0)
+
     tl.to(close, store.state.settings.headerFadeSpeed, {
         autoAlpha: 1,
         ease: Power2.easeInOut
@@ -516,7 +532,10 @@ class TransitionManager {
         autoAlpha: 0,
         ease: Power2.easeInOut
       })
-      .call(next);
+
+    if (next) {
+      tl.call(next);
+    }
 
     this.fadeHeaderOut();
     this.fadeSocialNetworkOut();
@@ -533,7 +552,10 @@ class TransitionManager {
       return;
     }
 
-    overview.style.zIndex = 99;
+
+    setTimeout(function () {
+      overview.style.zIndex = 99;
+    }, store.state.settings.projectOverviewOpacitySpeed  * 700);
 
     TweenMax.to(overview, store.state.settings.projectOverviewOpacitySpeed, {
       autoAlpha: 1,
@@ -551,7 +573,7 @@ class TransitionManager {
     overview.style.zIndex = positionManager.getOverviewPosition(index).z;
 
     TweenMax.to(overview, store.state.settings.projectOverviewOpacitySpeed, {
-      autoAlpha: 0.5,
+      autoAlpha: 0.1,
       ease: Power2.easeOut
     });
   }

@@ -37,15 +37,15 @@ class PositionManager {
     }
 
     const numberOfProjects = this.numberOfProjects;
-    let normalizedDistance = 0.5 - this.normalizedDistance;
+    let normalizedDistance = 1 - this.normalizedDistance;
 
-    if (this.normalizedDistance > 0.5) {
-      normalizedDistance = 0
-    }
+    // if (this.normalizedDistance > 0.5) {
+    //   normalizedDistance = 0
+    // }
 
     const radius = {
-      x: this.defaultRadius.x + normalizedDistance * window.innerWidth,
-      y: this.defaultRadius.y + normalizedDistance * window.innerHeight
+      x: this.defaultRadius.x + normalizedDistance * window.innerWidth / 2, // ici
+      y: this.defaultRadius.y + normalizedDistance * window.innerHeight / 2
     };
 
     const scale = getScale(overview);

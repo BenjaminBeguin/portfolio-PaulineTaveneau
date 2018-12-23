@@ -9,7 +9,14 @@ export default {
      * close method
      */
     close() {
-      this.$router.go(-1);
+      transitionManager.fadeAboutOut();
+
+      setTimeout(() => {
+        this.$router.go(-1);
+      }, 1500);
+      // setTimeout(function () {
+      //   window.scroll(0, 0) // dirty but i dont why it goes scrolltoBottom otherwhise
+      // }, 10);
     }
   },
   components: {

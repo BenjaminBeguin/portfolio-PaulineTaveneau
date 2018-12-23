@@ -32,7 +32,6 @@ export default{
      */
     handleClick() {
       const windowHeight = window.innerHeight;
-
       window.scrollTo(0, windowHeight * 0.5);
     },
     /**
