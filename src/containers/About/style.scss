@@ -162,7 +162,13 @@ a {
   .about {
     h3 {
       font-size: 24px;
-      margin-top: 77px;
+      margin-top: 40px;
+    }
+
+    .mainTitle {
+      font-size: 50px;
+      margin-top: 100px;
+      margin-bottom: 0px;
     }
 
     sup {
@@ -184,6 +190,11 @@ a {
 
     &-col-left {
       display: none;
+    }
+
+    &-col-right.abso {
+      padding-left: 50px;
+      padding-bottom: 20px;
     }
   }
 

@@ -1,8 +1,8 @@
 <template>
   <main id="app" :class="{ 'mobile-device': isMobileDevice }">
     <Loader v-on:onLoadingComplete="handleLoadingComplete"
-            v-if="!store.isInit"></Loader>
-    <router-view v-else></router-view>
+            ></Loader>
+    <router-view v-if="store.isInit"></router-view>
   </main>
 </template>
 
@@ -52,13 +52,14 @@
        * handleLoadingComplete method
        */
       handleLoadingComplete() {
-        transitionManager.fadeOutLoader();
-        positionManager.init();
+        console.log('handleLoadingComplete');
 
         setTimeout(() => {
           store.hasInit(true);
           transitionManager.initTitle();
-          transitionManager.fadeMouseScrollIn();
+          // transitionManager.fadeMouseScrollIn();
+          transitionManager.fadeOutLoader();
+          positionManager.init();
         }, store.state.settings.loaderFadeSpeed + 1000);
       }
     },

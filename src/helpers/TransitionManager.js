@@ -107,7 +107,7 @@ class TransitionManager {
         autoAlpha: 1,
         ease: Power2.easeInOut
       });
-    }, 200)
+    }, 0)
   }
 
   //////////
@@ -123,7 +123,6 @@ class TransitionManager {
     if (!loader) {
       return;
     }
-
     TweenMax.to(loader, store.state.settings.loaderFadeSpeed, {
       autoAlpha: 0,
       ease: Power2.easeInOut

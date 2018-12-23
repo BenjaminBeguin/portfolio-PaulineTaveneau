@@ -14,7 +14,8 @@ export default {
       animation: null,
       loadingStatus: 'pending',
       timer: null,
-      time: 0
+      time: 0,
+      emitted: false
     }
   },
   methods: {
@@ -65,8 +66,9 @@ export default {
     this.timer = setInterval(() => {
       this.time += 0.5;
 
-      if (this.loadingStatus === 'finish' && this.time >= (this.animation.totalFrames / this.animation.frameRate)) {
+      if (!this.emitted && this.loadingStatus === 'finish' && this.time >= (this.animation.totalFrames / this.animation.frameRate)) {
         this.$emit('onLoadingComplete');
+        this.emitted = true
       }
     }, 500);
   },

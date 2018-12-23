@@ -12,7 +12,7 @@ $primaryColor: #f5b8a7;
   // background-color: #0f0f0f;
 
   h1 {
-    font-size: 92px;
+    font-size: 90px;
     font-family: 'KeplerStd-Disp', serif;
     font-weight: normal;
     margin: auto;
@@ -21,7 +21,9 @@ $primaryColor: #f5b8a7;
     z-index: 1;
 
     img {
-      width: 595px;
+      width: 541px;
+      transform: scale(0.99999);
+      margin-top: 22px;
       height: auto;
     }
   }
