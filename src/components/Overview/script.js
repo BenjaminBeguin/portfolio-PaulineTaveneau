@@ -93,7 +93,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.initProperties();
-    }, 200);
+    }, 0);
   },
   watch : {
     activeOverview : function() {

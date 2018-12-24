@@ -57,6 +57,13 @@ class TransitionManager {
     const overview = document.getElementById(`overview-${index}`);
     const position = positionManager.getOverviewPosition(index);
 
+    const rotate = overview.getElementsByClassName('overview-rotate')[0];
+    TweenMax.to(rotate, store.state.settings.loaderFadeSpeed, {
+      transform: `rotate(0deg)`,
+      opacity: 1,
+      ease: Power2.easeInOut
+    });
+
     if (!overview) {
       return;
     }
@@ -120,13 +127,29 @@ class TransitionManager {
   fadeOutLoader() {
     const loader = document.getElementById('loader');
 
+    // rotate.forEach(function(v, i, a) {
+    //   console.log(v);
+    // });
+    //
+    // TweenMax.staggerTo(rotate, store.state.settings.loaderFadeSpeed, {
+    //   transform: `rotate(90deg)`,
+    //   ease: Power2.easeInOut
+    // });
+
     if (!loader) {
       return;
     }
+
     TweenMax.to(loader, store.state.settings.loaderFadeSpeed, {
       autoAlpha: 0,
       ease: Power2.easeInOut
     });
+
+    // if (!rotate) {
+    //   return;
+    // }
+
+
   }
 
   /**
@@ -266,10 +289,10 @@ class TransitionManager {
       return;
     }
 
-    TweenMax.to(mouseScroll, store.state.settings.mouseScrollFadeSpeed, {
-      autoAlpha: 1,
-      ease: Power2.easeInOut
-    });
+    // TweenMax.to(mouseScroll, store.state.settings.mouseScrollFadeSpeed, {
+    //   autoAlpha: 1,
+    //   ease: Power2.easeInOut
+    // });
   }
 
   /**
@@ -546,7 +569,8 @@ class TransitionManager {
 
   overOverviewIn(index) {
     const overview = document.getElementById(`overview-${index}`);
-
+    // const rotate = document.querySelector('.overview-rotate');
+    // console.log(rotate);
     if (!overview) {
       return;
     }

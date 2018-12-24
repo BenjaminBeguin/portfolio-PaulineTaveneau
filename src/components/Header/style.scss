@@ -32,10 +32,17 @@
 
 #app.mobile-device {
   #header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
     .logo {
       left: 40px;
       right: 40px;
       pointer-events: none;
+      max-width: 190px;
+      text-align: center;
 
       img {
         display: block;

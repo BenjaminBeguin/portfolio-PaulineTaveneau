@@ -30,7 +30,7 @@ a {
 
   h3 {
     font-family: 'KeplerStd-Disp', serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: normal;
     margin: 0 0 50px;
   }
@@ -198,7 +198,12 @@ a {
     }
   }
 
-  .close, .thanks {
+  .about-col-right-safe {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .close {
     display: none;
   }
 }

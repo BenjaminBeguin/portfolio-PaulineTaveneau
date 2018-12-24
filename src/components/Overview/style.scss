@@ -5,9 +5,17 @@
   background-color: #ffffff;
   cursor: pointer;
   transform: scale(0.8);
-  overflow: hidden;
+  // overflow: hidden;
   transform-style: preserve-3d;
   opacity: 0;
+
+  .overview-rotate {
+    transform: rotate(15deg);
+    opacity: 0;
+    background: blue;
+    transition: 0.5s ease all 1s;
+
+  }
 
   img {
     display: block;

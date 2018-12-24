@@ -3,8 +3,10 @@
      @mouseover="handleMouseOver"
      @mouseout="handleMouseOut">
   <router-link v-if="routeName" @click="handleClick" :to="{ name: 'projects', params: { name: routeName }}">
-    <img :src="imageProperties.src"
-         :alt="name"
-         :style="{ transform: imageProperties.transform, filter: imageProperties.filter }">
+    <div class="overview-rotate">
+      <img :src="imageProperties.src"
+      :alt="name"
+      :style="{ transform: imageProperties.transform, filter: imageProperties.filter }">
+    </div>
   </router-link>
 </div>

@@ -52,7 +52,8 @@
        * handleLoadingComplete method
        */
       handleLoadingComplete() {
-        console.log('handleLoadingComplete');
+        const body = document.getElementsByTagName('body')[0];
+        body.classList.add('stop-rotate');
 
         setTimeout(() => {
           store.hasInit(true);

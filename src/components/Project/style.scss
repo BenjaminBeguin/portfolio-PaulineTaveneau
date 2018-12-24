@@ -10,7 +10,9 @@ $nav-overview-width: 260px;
 
 .project {
   position: absolute;
-  background: #fbfbfb;
+  // background: #fbfbfb;
+  background: black;
+  color: white;
   top: 0;
   left: 0;
   right: 0;
@@ -38,7 +40,8 @@ $nav-overview-width: 260px;
 
   &-title {
     display: block;
-    color : #f7f7f7;
+    // color : #f7f7f7;
+    color: white;
     //width: calc(26% + 27.5px);
     font-size: 120px;
     font-weight: normal;
@@ -81,7 +84,7 @@ $nav-overview-width: 260px;
         margin: 0 auto;
 
       }
-      background: white;
+      background: black;
       padding-top: 70px;
       padding-bottom: 140px;
 
@@ -104,7 +107,7 @@ $nav-overview-width: 260px;
       width: 30%;
       margin-right: 55px;
       margin-top: 45px;
-      color: black;
+      color: white;
       font-size: 16px;
       font-family: 'gt_eesti_pro_displaylight', sans-serif;
       text-align: left;
@@ -243,7 +246,7 @@ $nav-overview-width: 260px;
        margin: 0px auto 0px;
     }
     //margin: 210px auto;
-    background-color: white;
+    background-color: black;
     padding: 100px $padding-left-right;
   }
 
