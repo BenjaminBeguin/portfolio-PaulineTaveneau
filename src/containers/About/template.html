@@ -5,7 +5,7 @@
     <span>Close</span>
   </div>
   <div id="about" class="about">
-    <div class="about-row fixed-row">
+    <div class="about-row fixed-row" >
       <div class="about-col-left">
         <div class="flex-center flex-end">
           <div>
@@ -13,7 +13,7 @@
           </div>
         </div>
       </div>
-      <div class="about-col-right abso">
+      <div class="about-col-right abso" id="aboutHead" v-bind:class="{ headCanScroll: headCanScroll }">
         <div class="flex-center">
           <div class="about-content">
             <h3 class="fading-block mainTitle">Designer <br>Digital</h3>
@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-    <div class="about-row social">
+    <div class="about-row social" id="aboutSocial">
       <!-- <div class="about-col-left"></div> -->
       <div class="about-col-right-safe">
         <div class="social-link">
