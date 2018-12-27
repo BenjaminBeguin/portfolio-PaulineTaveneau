@@ -24,28 +24,28 @@ export default {
       //   window.scroll(0, 0) // dirty but i dont why it goes scrolltoBottom otherwhise
       // }, 10);
     },
+    handleScrollWindow() {
+      if (window.scrollY >= 5) {
+        this.headCanScroll = false
+      } else {
+        this.headCanScroll = true
+      }
+
+      console.log(this.headCanScroll);
+    },
     checkScroll() {
       const about = document.getElementById('aboutHead');
       const social = document.getElementById('aboutSocial');
 
-      window.onscroll = () => {
-        // if (window.scrollY >= social.scrollHeight - 5) {
-        if (window.scrollY >= 5) {
-          this.headCanScroll = false
-        } else {
-          this.headCanScroll = true
-        }
+      window.addEventListener('scroll', this.handleScrollWindow);
 
-        console.log(this.headCanScroll);
-      };
-
-      about.addEventListener('scroll', () => {
-        if (about.scrollTop + about.offsetHeight >= about.scrollHeight - 5) {
-          this.headIsBottom = true
-        } else {
-          this.headIsBottom = false
-        }
-      })
+      // about.addEventListener('scroll', () => {
+      //   if (about.scrollTop + about.offsetHeight >= about.scrollHeight - 5) {
+      //     this.headIsBottom = true
+      //   } else {
+      //     this.headIsBottom = false
+      //   }
+      // })
     }
   },
   components: {
@@ -57,5 +57,9 @@ export default {
       transitionManager.fadeAboutIn();
       this.checkScroll()
     }, 50);
+  },
+  beforeDestroy() {
+    // about.removeEventListener('scroll')
+    window.removeEventListener('scroll', handleScrollWindow)
   }
 }
