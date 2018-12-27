@@ -183,7 +183,6 @@ class TransitionManager {
       const overviewTitleposition = positionManager.getOverviewTitlePosition(index);
 
       const rotate = overview.getElementsByClassName('overview-rotate')[0];
-      console.log(rotate);
       TweenMax.to(rotate, 0, {
         transform: `rotate(${rotateState}deg)`,
         // ease: Power2.easeInOut

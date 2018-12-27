@@ -45,8 +45,8 @@ export default{
 
       this.titleProperties.pointerEvents = (normalizeDistance >= 0.5) ? 'none' : 'auto';
       positionManager.normalizedDistance = normalizeDistance;
-
-      if (normalizeDistance == 1) {
+      console.log(normalizeDistance);
+      if (normalizeDistance >= 1) {
         transitionManager.fadeHeaderIn();
         transitionManager.fadeSocialNetworkIn();
       } else {

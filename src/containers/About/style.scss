@@ -100,8 +100,13 @@ a {
 
     &.abso {
       position: absolute;
-      padding-left: calc(50% + 50px);
       padding-bottom: 100px;
+      padding-left: 0;
+
+      .flex-center {
+          padding-left: calc(50% + 50px);
+          padding-bottom: 100px;
+      }
     }
   }
 
@@ -141,7 +146,7 @@ a {
   max-width: 962px;
   width: 100%;
   margin: 0 auto;
-  padding-left: 50px;
+  padding-left: 30px;
   font-family: 'gt_eesti_pro_displaylight', sans-serif;
   text-align: left;
   color: #000000;
@@ -194,11 +199,28 @@ a {
 
     &-col-left {
       display: none;
+
+      &-safe {
+        display: flex;
+      }
     }
 
     &-col-right.abso {
-      padding-left: 50px;
-      padding-bottom: 20px;
+      padding: 0;
+      height: auto;
+      position: static;
+
+      .flex-center {
+          padding-left: 40px;
+          padding-right: 40px;
+          padding-bottom: 100px;
+      }
+
+      .social {
+        position: static;
+        padding-left: 40px;
+
+      }
     }
   }
 
@@ -218,13 +240,21 @@ a {
   width: 100%;
   position: absolute;
   background: white;
-  top: 100%;
+  top: 120%;
   min-height: 611px;
 
-  .about-col-right-safe {
+  .about-col-left-safe {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    padding: 50px;
+    padding-right: 100px;
+    text-align: left;
 
+  }
+
+  .social-link {
+    width: 350px;
   }
 
   .social-network {

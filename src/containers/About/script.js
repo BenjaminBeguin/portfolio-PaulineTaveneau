@@ -33,6 +33,14 @@ export default {
 
       console.log(this.headCanScroll);
     },
+    checkHeight() {
+      const height = document.getElementById('js-height');
+      const social = document.getElementById('aboutSocial');
+      console.log(social);
+      console.log(height.clientHeight + 'px');
+      social.style.top = height.clientHeight + 'px'
+
+    },
     checkScroll() {
       const about = document.getElementById('aboutHead');
       const social = document.getElementById('aboutSocial');
@@ -53,9 +61,11 @@ export default {
     SocialNetwork
   },
   mounted() {
+    window.addEventListener('resize', this.checkHeight);
     setTimeout(() => {
       transitionManager.fadeAboutIn();
-      this.checkScroll()
+      // this.checkScroll()
+      this.checkHeight()
     }, 50);
   },
   beforeDestroy() {
