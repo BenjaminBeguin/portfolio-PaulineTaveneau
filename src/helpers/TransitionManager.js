@@ -56,13 +56,14 @@ class TransitionManager {
   initOverview(index) {
     const overview = document.getElementById(`overview-${index}`);
     const position = positionManager.getOverviewPosition(index);
+    //
+    // const rotate = overview.getElementsByClassName('overview-rotate')[0];
+    // TweenMax.to(rotate, store.state.settings.loaderFadeSpeed, {
+    //   transform: `rotate(0deg)`,
+    //   opacity: 1,
+    //   ease: Power2.easeInOut
+    // });
 
-    const rotate = overview.getElementsByClassName('overview-rotate')[0];
-    TweenMax.to(rotate, store.state.settings.loaderFadeSpeed, {
-      transform: `rotate(0deg)`,
-      opacity: 1,
-      ease: Power2.easeInOut
-    });
 
     if (!overview) {
       return;
@@ -159,12 +160,15 @@ class TransitionManager {
     const overviewsTitles = document.getElementsByClassName('overviews-titles')[0];
     const overviewsContainer = document.getElementsByClassName('container')[0];
 
-    TweenMax.to(overviewsTitles, store.state.settings.projectOverviewRepositioningSpeed, {
-      autoAlpha: positionManager.normalizedDistance
-    });
 
     let colorState = positionManager.normalizedDistance * 2;
+    let rotateState = 15 - positionManager.normalizedDistance * 15;
 
+    // TweenMax.to(rotate, store.state.settings.loaderFadeSpeed, {
+    //   transform: `rotate(0deg)`,
+    //   opacity: 1,
+    //   ease: Power2.easeInOut
+    // });
 
     TweenMax.to(overviewsContainer, store.state.settings.projectOverviewRepositioningSpeed, {
       backgroundColor: `rgba(15,15,15, ${colorState})`
@@ -177,6 +181,16 @@ class TransitionManager {
       const overviewTitle = document.getElementById(`overview-title-${index}`);
       const overviewPosition = positionManager.getOverviewPosition(index);
       const overviewTitleposition = positionManager.getOverviewTitlePosition(index);
+
+      const rotate = overview.getElementsByClassName('overview-rotate')[0];
+      console.log(rotate);
+      TweenMax.to(rotate, 0, {
+        transform: `rotate(${rotateState}deg)`,
+        // ease: Power2.easeInOut
+      });
+      TweenMax.to(overviewsTitles, store.state.settings.projectOverviewRepositioningSpeed, {
+        autoAlpha: positionManager.normalizedDistance
+      });
 
       if (!overview) {
         return;
