@@ -173,7 +173,20 @@
       "panelMobile": {
         "rows": [
           {
-            "columns": []
+            "columns": [
+              {
+                 "src": "/static/images/projects/Ownly/mobile01.jpg"
+              },
+              {
+                 "src": "/static/images/projects/Ownly/mobile02.jpg"
+              },
+               {
+                 "src": "/static/images/projects/Ownly/mobile03.jpg"
+              },
+              {
+                 "src": "/static/images/projects/Ownly/mobile04.jpg"
+              }
+            ]
           }
         ]
       },
